@@ -1,0 +1,23 @@
+  #include <iostream>
+using namespace std;
+int bintodecimal(int binNum)
+{
+    int ans = 0, pow = 1;
+    while (binNum > 0)
+    {
+        int rem = binNum % 2;
+      
+        ans += rem * pow;
+        binNum /= 2;
+        pow = pow * 2;
+    }
+    return ans;
+}
+int main()
+{
+    int binNum=50;
+    for(int i=1;i<=10;i++){
+    cout << bintodecimal(i) << endl;  
+    }
+    return 0;
+}
