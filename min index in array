@@ -1,0 +1,30 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <climits>
+using namespace std;
+int main() {
+    
+   int size=6;
+
+int num[]={34,55,-21,63,90};
+
+
+  
+   int smallest=INT_MAX;
+
+ int index;
+  
+   for(int i=0;i<size;i++){
+       if(num[i]<smallest){
+           smallest=num[i];
+        
+       }
+       if(num[i]==smallest){
+        index=i;
+       }
+       
+   }
+    
+cout<<"smallest's index is:"<<index<<endl;
+    return 0;
+}
