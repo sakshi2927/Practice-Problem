@@ -1,0 +1,24 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <vector>
+#include <climits>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int n=5;
+    int arr[5]={1,2,3,4,5};
+    int maxsum=INT_MIN;
+    for(int str=0;str<n;str++){
+        int currsum=0;
+        for(int end=str;end<n;end++){
+            currsum+=arr[end];
+            maxsum=max(maxsum,currsum);
+        }
+        
+    }
+    cout<<maxsum<<endl;
+    
+
+    return 0;
+}
